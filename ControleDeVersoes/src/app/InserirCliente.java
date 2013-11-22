@@ -22,8 +22,20 @@ public class InserirCliente {
 		c.setNome("David Soares dos Santos");
 		
 		c.setEmail("David@qualidadesoftware.com.br");
+
+		Cliente c1 = new Cliente();
+		
+		c1.setNome("Fernando Piovesan");
+		c1.setEmail("piovesan@qualidadedesoftware.com.br");
+		
+		Cliente c2 = new Cliente();
+		
+		c2.setNome("Rafael Monteiro");
+		c2.setEmail("rafael@qualidadedesoftware.com.br");
 		
 		manager.persist(c);
+		manager.persist(c1);
+		manager.persist(c2);
 		
 		manager.getTransaction().commit();
 		
